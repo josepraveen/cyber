@@ -124,11 +124,21 @@ resource "azurerm_container_app" "main" {
       memory = "2.0Gi"
 
       env {
-        name  = "OPENAI_API_KEY"
-        value = var.openai_api_key
+        name  = "OPENROUTER_API_KEY"
+        value = var.openrouter_api_key
       }
-
+     
       env {
+        name  = "OPENAI_BASE_URL"
+        value = var.openai_base_url
+      }
+      
+      env {
+        name  = "MODEL"
+        value = var.model
+      }
+      
+     env {
         name  = "SEMGREP_APP_TOKEN"
         value = var.semgrep_app_token
       }
