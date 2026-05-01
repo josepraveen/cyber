@@ -87,12 +87,15 @@ Now let's create your `.env` file with the necessary API keys.
 4. Add the following content:
 
 ```
-OPENAI_API_KEY=your-openai-key-here
+OPENROUTER_API_KEY=your-openrouter-key-here
+OPENAI_BASE_URL=https://openrouter.ai/api/v1
+MODEL=openai/gpt-4o-mini
+ENVIRONMENT=development
 SEMGREP_APP_TOKEN=your-semgrep-token-here
 ```
 
 5. Replace the placeholder values:
-   - `your-openai-key-here` - Your OpenAI API key from previous weeks
+   - `OPENROUTER_API_KEY` - The openrouter token you just created
    - `your-semgrep-token-here` - The Semgrep token you just created
 6. Save the file (`Cmd+S` on Mac, `Ctrl+S` on Windows/Linux)
 
@@ -102,7 +105,7 @@ SEMGREP_APP_TOKEN=your-semgrep-token-here
 
 Your `.env` file should look similar to this (but with your actual keys):
 ```
-OPENAI_API_KEY=sk-proj-abc123xyz...
+OPENROUTER_API_KEY=sk-proj-abc123xyz...
 SEMGREP_APP_TOKEN=eyJ0eXAiOiJKV1QiLCJhbGc...
 ```
 
