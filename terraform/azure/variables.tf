@@ -13,11 +13,26 @@ variable "location" {
 variable "resource_group_name" {
   description = "Name of the resource group"
   type        = string
-  default     = "cyber-analyzer-rg"
+  default     = "1-c6885b26-playground-sandbox"
 }
 
-variable "openai_api_key" {
-  description = "OpenAI API key for the application"
+variable "openrouter_api_key" {
+  description = "openrouter API key for the application"
+  type        = string
+  sensitive   = true
+  default     = ""
+}
+
+
+variable "openai_base_url" {
+  description = "openapi base url for the application"
+  type        = string
+  sensitive   = true
+  default     = ""
+}
+
+variable "model"{
+  description = "model name for the application"
   type        = string
   sensitive   = true
   default     = ""
@@ -35,3 +50,8 @@ variable "docker_image_tag" {
   type        = string
   default     = "latest"
 }
+
+
+
+
+
